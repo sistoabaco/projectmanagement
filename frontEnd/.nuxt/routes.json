@@ -1,0 +1,78 @@
+[
+  {
+    "name": "categories",
+    "path": "/categories",
+    "component": "C:\\\\Projectos\\\\projectmanagement\\\\frontEnd\\\\pages\\\\categories\\\\index.vue",
+    "chunkName": "pages/categories/index",
+    "children": [
+      {
+        "name": "categories-index-create",
+        "path": "create",
+        "component": "C:\\\\Projectos\\\\projectmanagement\\\\frontEnd\\\\pages\\\\categories\\\\index\\\\create.vue",
+        "chunkName": "pages/categories/index/create",
+        "_name": "_a48a0038"
+      }
+    ],
+    "_name": "_66326168"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Projectos\\\\projectmanagement\\\\frontEnd\\\\pages\\\\login\\\\index.vue",
+    "chunkName": "pages/login/index",
+    "_name": "_24d8d987"
+  },
+  {
+    "name": "partners",
+    "path": "/partners",
+    "component": "C:\\\\Projectos\\\\projectmanagement\\\\frontEnd\\\\pages\\\\partners\\\\index.vue",
+    "chunkName": "pages/partners/index",
+    "_name": "_7ed049f9"
+  },
+  {
+    "name": "project",
+    "path": "/project",
+    "component": "C:\\\\Projectos\\\\projectmanagement\\\\frontEnd\\\\pages\\\\project\\\\index.vue",
+    "chunkName": "pages/project/index",
+    "children": [
+      {
+        "name": "project-index-create",
+        "path": "create",
+        "component": "C:\\\\Projectos\\\\projectmanagement\\\\frontEnd\\\\pages\\\\project\\\\index\\\\create.vue",
+        "chunkName": "pages/project/index/create",
+        "_name": "_5b0cbdd3"
+      }
+    ],
+    "_name": "_157c7e57"
+  },
+  {
+    "name": "users",
+    "path": "/users",
+    "component": "C:\\\\Projectos\\\\projectmanagement\\\\frontEnd\\\\pages\\\\users\\\\index.vue",
+    "chunkName": "pages/users/index",
+    "children": [
+      {
+        "name": "users-index-create",
+        "path": "create",
+        "component": "C:\\\\Projectos\\\\projectmanagement\\\\frontEnd\\\\pages\\\\users\\\\index\\\\create.vue",
+        "chunkName": "pages/users/index/create",
+        "_name": "_5e05b004"
+      },
+      {
+        "name": "users-index-id-edit",
+        "path": ":id?/edit",
+        "component": "C:\\\\Projectos\\\\projectmanagement\\\\frontEnd\\\\pages\\\\users\\\\index\\\\_id\\\\edit.vue",
+        "chunkName": "pages/users/index/_id/edit",
+        "_name": "_4a1117ec"
+      }
+    ],
+    "_name": "_3fbf3188"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Projectos\\\\projectmanagement\\\\frontEnd\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_43794384"
+  }
+]

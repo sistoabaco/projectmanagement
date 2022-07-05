@@ -1,0 +1,26 @@
+{
+  "LayoutSidebar": {
+    "description": "Auto imported from components/layout/Sidebar.vue"
+  },
+  "LayoutTopbar": {
+    "description": "Auto imported from components/layout/Topbar.vue"
+  },
+  "CommonMiscAppButton": {
+    "description": "Auto imported from components/common/misc/AppButton.vue"
+  },
+  "CommonMiscModal": {
+    "description": "Auto imported from components/common/misc/Modal.vue"
+  },
+  "CommonMiscPage": {
+    "description": "Auto imported from components/common/misc/Page.vue"
+  },
+  "CommonMiscTable": {
+    "description": "Auto imported from components/common/misc/Table.vue"
+  },
+  "CommonInputsSelectInput": {
+    "description": "Auto imported from components/common/inputs/SelectInput.vue"
+  },
+  "CommonInputsTextInput": {
+    "description": "Auto imported from components/common/inputs/TextInput.vue"
+  }
+}
