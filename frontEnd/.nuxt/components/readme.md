@@ -8,9 +8,9 @@ You can directly use them in pages and other components without the need to impo
 
 - `<LayoutSidebar>` | `<layout-sidebar>` (components/layout/Sidebar.vue)
 - `<LayoutTopbar>` | `<layout-topbar>` (components/layout/Topbar.vue)
+- `<CommonInputsSelectInput>` | `<common-inputs-select-input>` (components/common/inputs/SelectInput.vue)
+- `<CommonInputsTextInput>` | `<common-inputs-text-input>` (components/common/inputs/TextInput.vue)
 - `<CommonMiscAppButton>` | `<common-misc-app-button>` (components/common/misc/AppButton.vue)
 - `<CommonMiscModal>` | `<common-misc-modal>` (components/common/misc/Modal.vue)
 - `<CommonMiscPage>` | `<common-misc-page>` (components/common/misc/Page.vue)
 - `<CommonMiscTable>` | `<common-misc-table>` (components/common/misc/Table.vue)
-- `<CommonInputsSelectInput>` | `<common-inputs-select-input>` (components/common/inputs/SelectInput.vue)
-- `<CommonInputsTextInput>` | `<common-inputs-text-input>` (components/common/inputs/TextInput.vue)
