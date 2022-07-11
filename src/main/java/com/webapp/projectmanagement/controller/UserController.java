@@ -18,8 +18,4 @@ public class UserController {
         return userRepo.findAll();
     }
 
-    @PostMapping("/registerUser")
-    public User register(@RequestBody User user){
-        return userRepo.save(user);
-    }
 }
