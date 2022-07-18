@@ -67,7 +67,7 @@ export default {
 
         })
         this.$nuxt.refresh()
-        this.$router.push({ name: 'category' })
+        this.$router.push({ name: 'categories' })
     },
   },
 };

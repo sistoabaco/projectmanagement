@@ -90,7 +90,7 @@ import EditOutline from "~/assets/icons/edit-outline.vue";
 import DeleteOutline from "~/assets/icons/delete_outline.vue";
 
 export default defineComponent({
-  name: "Index",
+  name: "employees",
   components: {
     Page,
     AppButton,

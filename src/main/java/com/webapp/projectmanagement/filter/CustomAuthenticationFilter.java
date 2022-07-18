@@ -39,7 +39,6 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
         log.info("url is: {}", request.getRequestURL());
         log.info("servletPath is: {}", request.getServletPath());
         log.info("URI is: {}", request.getRequestURI());
-        log.info("origin: {}", request.getHeader("Origin"));
 
         UsernamePasswordAuthenticationToken authenticationToken =
              new UsernamePasswordAuthenticationToken(username, password);

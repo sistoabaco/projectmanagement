@@ -5,19 +5,18 @@ import com.webapp.projectmanagement.filter.CustomAuthorizationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import java.util.List;
+
 import static org.springframework.http.HttpMethod.GET;
 import static org.springframework.http.HttpMethod.POST;
 import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
@@ -41,21 +40,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception{
         http.csrf().disable();
-//        http.authorizeRequests().antMatchers("/", "/h2", "/login", "/refreshToken").permitAll();
-//        http.authorizeRequests().antMatchers("/saveProject", "/saveCategory", "/savePartner").permitAll();
-//        http.authorizeRequests().antMatchers(GET, "/**").permitAll();
-        http.authorizeRequests().antMatchers(POST, "/login").permitAll();
+        http.sessionManagement().sessionCreationPolicy(STATELESS);
+        http.authorizeRequests().antMatchers("/", "/h2", "/refreshToken").permitAll();
+        http.authorizeRequests().antMatchers("/saveProject", "/saveCategory", "/savePartner").permitAll();
+        http.authorizeRequests().antMatchers(GET, "/**").permitAll();
+        http.authorizeRequests().antMatchers(POST, "/**").permitAll();
+//        http.authorizeRequests().antMatchers(POST, "/login").permitAll();
 //        http.authorizeRequests().antMatchers(GET, "/**").hasAnyAuthority("P_USER");
 //        http.authorizeRequests().antMatchers(POST, "/saveEmployee").hasAnyAuthority("P_ADMIN");
         http.authorizeRequests().anyRequest().authenticated();
         http.addFilter(new CustomAuthenticationFilter(authenticationManagerBean()));
-        http.addFilterBefore(new CustomAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        http.addFilterBefore(new CustomAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);
 
         http.cors(c -> {
             CorsConfigurationSource cs =  r ->{
                 CorsConfiguration cc = new CorsConfiguration();
-                cc.setAllowedOrigins(List.of("http://localhost:300"));
+                cc.setAllowedOrigins(List.of("http://localhost:3000"));
                 cc.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE"));
                 cc.setAllowedHeaders(List.of("*"));
                 cc.setAllowCredentials(true);

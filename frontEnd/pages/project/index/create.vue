@@ -110,8 +110,8 @@ export default {
 
         })
 
-        this.$nuxt.refresh()
-        this.$router.push({ name: 'project' })
+      this.$nuxt.refresh()
+      this.$router.push({ name: 'projects' })
     },
   },
 };
